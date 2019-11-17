@@ -125,6 +125,10 @@
   height: 220px;
 }
 
+.sub-container {
+  margin: 10px;
+}
+
 .sub-words {
   padding-top: 5%;
 }
