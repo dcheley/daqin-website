@@ -70,12 +70,6 @@
   margin-top: 20px;
 }
 
-.outlined-title {
-  text-align: center !important;
-  border: 2px solid black;
-  padding: 30px;
-}
-
 #relative {
   position: relative;
 }
@@ -131,6 +125,10 @@
 
 .sub-words {
   padding-top: 5%;
+}
+
+.activity-container {
+  padding: 5%;
 }
 
 #map {
