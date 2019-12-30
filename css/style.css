@@ -23,8 +23,9 @@
   margin-bottom: 10px;
 }
 
-.nav-logo {
-  width: 100px;
+.logo {
+  width: 150px;
+  height: 100%;
   float: left;
 }
 
@@ -35,10 +36,16 @@
 .nav-link {
   margin-top: 25px;
   font-size: 16px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #FDA500;
 }
 
 .nav-item.active > a {
-  border-bottom: 2px solid;
+  background: #FDA500;
+  color: white;
 }
 
 .container {
