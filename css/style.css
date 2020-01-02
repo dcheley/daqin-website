@@ -34,7 +34,6 @@
 }
 
 .nav-link {
-  margin-top: 25px;
   font-size: 16px;
   color: black;
 }
@@ -46,6 +45,54 @@
 .nav-item.active > a {
   background: #FDA500;
   color: white;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.intro-container {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  padding-left: 10%;
+}
+
+.banner-btn {
+  border-radius: 4px;
+  background: #FDA500;
+  border: none;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.banner-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.banner-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.banner-btn:hover span {
+  padding-right: 25px;
+  color: black;
+}
+.banner-btn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .container {
