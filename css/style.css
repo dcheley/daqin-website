@@ -1,17 +1,26 @@
 @charset "utf-8";
-
-.parallax {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.body {
   width: 100%;
-  height: 100vh;
-  /* The image used */
-  background-image: url("../images/banner-3.jpeg");
+}
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-size: cover;
+.row {
+  width: 100%;
+}
+
+.carousel {
+  padding: 10px;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-picture {
+  width: 80%;
 }
 
 .nav-bar {
@@ -19,8 +28,13 @@
   margin-bottom: 10px;
 }
 
-.nav-logo {
-  width: 100px;
+.nav-row {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 100%;
   float: left;
 }
 
@@ -29,12 +43,138 @@
 }
 
 .nav-link {
-  margin-top: 25px;
-  font-size: 16px;
+  font-size: 15px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: #FDA500;
 }
 
 .nav-item.active > a {
-  border-bottom: 2px solid;
+  background: #FDA500;
+  color: white;
+}
+
+.banner-container {
+  height: 600px;
+  background-image: linear-gradient(to bottom right, #ff6000, #FDA500);
+}
+
+.banner-btn {
+  border-radius: 4px;
+  background: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.banner-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.banner-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.banner-btn:hover span {
+  padding-right: 25px;
+  color: #FDA500;
+}
+.banner-btn:hover {
+  background: white;
+
+}
+.banner-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.tint {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-text {
+  position: relative;
+  text-align: center;
+}
+
+.img-text img {
+  width: 70%;
+}
+
+.img-text h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+}
+
+.overlay-container {
+  position: relative;
+  width: 70%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FDA500;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
 }
 
 .container {
@@ -66,12 +206,6 @@
   margin-top: 20px;
 }
 
-.outlined-title {
-  text-align: center !important;
-  border: 2px solid black;
-  padding: 30px;
-}
-
 #relative {
   position: relative;
 }
@@ -84,8 +218,11 @@
 }
 
 .service-banner {
-  display: block;
-  margin: auto;
+  width: 100%;
+}
+
+.service-menu {
+  padding: 10%;
 }
 
 .half {
@@ -99,20 +236,35 @@
   width: 100%;
 }
 
-.third {
-  margin: auto;
-  float: left;
-  width: 33%;
-  text-align: center;
+.section-icon {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.section-words ul {
+  text-align: left;
+  list-style-type: circle;
 }
 
 .services-title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .service-icon {
   margin-bottom: 30px;
   height: 220px;
+}
+
+.sub-container {
+  margin: 10px;
+}
+
+.sub-words {
+  padding-top: 5%;
+}
+
+.activity-container {
+  padding: 5%;
 }
 
 #map {
