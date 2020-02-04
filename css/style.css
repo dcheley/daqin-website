@@ -86,6 +86,10 @@
   color: #FDA500;
 }
 
+.section-words-grey h5, li{
+  color: gray;
+}
+
 .hover-affect:hover {
   background: darkgray;
 }
