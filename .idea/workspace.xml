@@ -134,6 +134,7 @@
     <option name="width" value="720" />
     <option name="height" value="832" />
   </component>
+  <component name="ProjectId" id="1m247hhgAExZ7V2DMsqvta6RXGV" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -263,6 +264,12 @@
         <option value="1" />
       </list>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="373" y="181" width="694" height="518" key="find.popup" timestamp="1608678267163">
+      <screen x="0" y="25" width="1440" height="830" />
+    </state>
+    <state x="373" y="181" width="694" height="518" key="find.popup/0.25.1440.830/-241.-1055.1920.1055@0.25.1440.830" timestamp="1608678267163" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/logo.svg" />
